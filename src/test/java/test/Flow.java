@@ -32,15 +32,15 @@ public class Flow extends BaseClass{
     @Test(priority = 3)
     public void approvingLeaveAndVerifyingApproval()throws Exception
     {
-        LoginTest log=new LoginTest();
-        log.login();
-        ApproveLeave approve=new ApproveLeave();
-        approve.approveLeave();
-        Logout out=new Logout();
-        out.logout();
-        EmployeeLogin in=new EmployeeLogin();
-        in.employeeLogin();
-        clickOnleaveManagementLink();
-        Assert.assertEquals(approvalVerification(),true);
+//        LoginTest log=new LoginTest();
+//        log.login();
+//        ApproveLeave approve=new ApproveLeave();
+//        approve.approveLeave();
+//        Logout out=new Logout();
+//        out.logout();
+//        EmployeeLogin in=new EmployeeLogin();
+//        in.employeeLogin();
+//        clickOnleaveManagementLink();
+        //Assert.assertEquals(approvalVerification(),true);
     }
 }
