@@ -20,7 +20,7 @@ public class RequestsPage_Methods {
 
         // 🔍 1️⃣ Try switching to iframe (if AG-Grid is inside an iframe)
         List<WebElement> frames = driver.findElements(By.tagName("iframe"));
-        if (frames.size() > 0) {
+        if (frames.size() >= 0) {
             System.out.println(">>> Switching to iframe 0");
             driver.switchTo().frame(0);
             Thread.sleep(500);

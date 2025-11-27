@@ -8,9 +8,9 @@ import static pageMethods.HomePage_Methods.*;
 import static utilities.TestData.propertyReader;
 
 @Listeners(utilities.ScreenShot.class)
-public class LoginTest{
+public class LoginTest extends BaseClass{
 
-    @Test()
+    @Test(groups = "login")
     public void login() throws IOException {
         Loginpage_Methods.enterEmail(propertyReader("email"));
         Loginpage_Methods.enterPassword(propertyReader("password"));

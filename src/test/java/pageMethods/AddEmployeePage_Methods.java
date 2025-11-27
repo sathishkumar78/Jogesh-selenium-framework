@@ -74,6 +74,11 @@ public class AddEmployeePage_Methods extends AddEmployee_Page {
         selectByvisibleText(reportiingTo,name);
     }
 
+    public static void selectReporter1(int num)
+    {
+        selectElementByIndex(reportiingTo,num);
+    }
+
     public static void clickonCertificates() {
         driver.findElement(certificates).click();
     }
@@ -87,7 +92,6 @@ public class AddEmployeePage_Methods extends AddEmployee_Page {
         clickOnElement(addButton);
 
     }
-
 
     public static boolean existedEmployee()
     {
