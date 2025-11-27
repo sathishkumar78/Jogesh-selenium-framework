@@ -47,34 +47,9 @@ public class CustomizedMethods extends BaseClass {
     public static void moveToElement(By locator)
     {
         WebElement element = driver.findElement(locator);
-        move.moveToElement(element)
-                .scrollByAmount(300, 0)   // scroll horizontally
-                .perform();
+        move.scrollToElement(element);
     }
 
-    public static void scrollToElement_AGGrid(WebDriver driver, By containerBy) throws InterruptedException {
-
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        WebElement container = driver.findElement(containerBy);
-
-//        for (int i = 0; i < 15; i++) {
-//
-//            try {
-//                WebElement target = driver.findElement(targetBy);
-//                if (target.isDisplayed()) {
-//                    js.executeScript("arguments[0].scrollIntoView({inline:'center'});", target);
-//                    return;
-//                }
-//            } catch (Exception ignored) {}
-//
-//            // Scroll horizontally only
-//            js.executeScript("arguments[0].scrollLeft += 300;", container);
-//        }
-
-        js.executeScript("document.querySelector('//div[@class='ag-body-horizontal-scroll-viewport']').scrollLeft +=500");
-        Thread.sleep(3000);
-        js.executeScript("document.querySelector('//div[@class='ag-body-horizontal-scroll-viewport']').scrollLeft -=500");
-    }
 
 
     public static void clickOnElement(By element) {
